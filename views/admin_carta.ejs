@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/estilos_admin_carta.css">
+    <link rel="stylesheet" href="resources/fonts/style.css">
+    <title>Administracion de la Carta</title>
+</head>
+<body>
+    <input type="checkbox" id="nav-toggle">
+    <div class="barra_nav">
+        <div class="logo">
+            <h2><a href=""><span class="icon-location-food"></span><span> <a href="/login">MIKUNA Admin</a></span></a></h2>
+        </div>
+        <div class="barra_menu">
+            <ul>
+                <li>
+                    <a href="/AdminCarta" class="carta"><span class="icon-clipboard"></span><span>Carta</span></a>
+                </li>
+                <li>
+                    <a href="/AdminReserva"><span class="icon-text-document"></span><span>Reservas</span></a>
+                </li>
+                <li>
+                    <a href="/AdminComent"><span class="icon-conversation"></span><span>Comentarios</span></a>
+                </li>
+                <li>
+                    <a href="index" class="inicio" ><span class="icon-home"></span><span>Vista-cliente</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="contenido_header">
+        <header>
+            <h1 class="menu">
+                <label for="nav-toggle" >
+                    <span class="icon-menu"></span>
+                </label>
+                <div class="title">
+                    <h1><span class="uno">Welcome</span><span class="dos"> to the letter from "MIKUNA"</span></h1>
+                </div>
+                <div>
+                    <h2>MIKUNA Admin</h2>
+                </div>
+                
+            </h1> 
+        </header>
+
+        <main>
+            <div class="register-form">
+                <h1 class="titlr_letter">form letter</h1>
+
+                 
+                 
+                <form action="/AdminCarta" method="POST">
+                    <!-- dia -->
+                 <label for="dia" >dia:</label>
+                 <input type="text" name="dia" class="dia" required>
+
+                    <div class="entrada">
+                        <h1>Entradas</h1>
+                        <br>
+                         <!-- uno -->
+                        <label for="platouno" >plato 1:</label>
+                        <input type="text" name="platouno" required>
+                        <!-- uno costo -->
+                        <label for="platounocosto" >costo 1:</label>
+                        <input type="number" name="platounocosto" required>
+
+
+                        <!-- dos -->
+                        <label for="platodos" >plato 2:</label>
+                        <input type="text" name="platodos" required>
+                        <!-- doscosto -->
+                        <label for="platodoscosto" >costo 2:</label>
+                        <input type="number" name="platodoscosto" required>
+                    </div>
+                
+                   <div class="fondo">
+                       <h1>Fondos</h1>
+                       <br>
+                       <!-- tres -->
+                        <label for="platotres" >fondo 1:</label>
+                        <input type="text" name="platotres" required>
+                        <!-- trescosto -->
+                        <label for="platotrescosto" >costo 1:</label>
+                        <input type="number" name="platotrescosto" required>
+
+
+                        <!-- cuatro -->
+                        <label for="platocuatro" >fondo 2:</label>
+                        <input type="text" name="platocuatro" required>
+                        <!-- cuatrocosto -->
+                        <label for="platocuatrocosto" >costo 2:</label>
+                        <input type="number" name="platocuatrocosto" required>
+                        
+                        
+                        <!-- cinco -->
+                        <label for="platocinco" >fondo 3:</label>
+                        <input type="text" name="platocinco" required>
+                        <!-- cincocosto -->
+                        <label for="platocincocosto">costo 3:</label>
+                        <input type="number" name="platocincocosto" required>
+
+                         <!-- seis -->
+                       <label for="platoseis" >fondo 4:</label>
+                       <input type="text" name="platoseis" required>
+                       <!-- seiscosto -->
+                       <label for="platoseiscosto" >costo 4:</label>
+                       <input type="number" name="platoseiscosto" required>
+                   </div>
+
+
+
+                   <div class="sopas">
+                       <h1>Sopas</h1> 
+                       <br>
+
+                      
+                       
+                       
+                       <!-- siete -->
+                       <label for="platosiete" >sopas 2:</label>
+                       <input type="text" name="platosiete" required>
+                       <!-- sietecosto -->
+                       <label for="platosietecosto">costo 2:</label>
+                       <input type="number" name="platosietecosto" required>
+
+                       <!-- ocho -->
+                       <label for="platoocho" >sopas 3:</label>
+                       <input type="text" name="platoocho" required>
+                       <!-- ochocosto -->
+                       <label for="platoochocosto" >costo 3:</label>
+                       <input type="number" name="platoochocosto" required>
+                       
+                       
+                       <!-- nueve -->
+                       <label for="platonueve" >sopas 4:</label>
+                       <input type="text" name="platonueve" required>
+                       <!-- nuevecosto -->
+                       <label for="platonuevecosto">costo 4:</label>
+                       <input type="number" name="platonuevecosto" required>
+                   </div>
+
+                   <div class="postres">
+                       <h1>Postres/Vebidas</h1>
+                       <br>
+                       <!-- dies -->
+                       <label for="platodies" >postre 1:</label>
+                       <input type="text" name="platodies" required>
+                       <!-- diescosto -->
+                       <label for="platodiescosto" >costo 1:</label>
+                       <input type="number" name="platodiescosto" required>
+                       
+                       
+                       <!-- once -->
+                       <label for="platoonce" >postre 2:</label>
+                       <input type="text" name="platoonce" required>
+                       <!-- oncecosto -->
+                       <label for="platooncecosto">costo 2:</label>
+                       <input type="number" name="platooncecosto" required>
+
+                
+                       <!-- doce -->
+                       <label for="platodoce" >postre 3:</label>
+                       <input type="text" name="platodoce" required>
+                       <!-- docecosto -->
+                       <label for="platodocecosto" >costo 3:</label>
+                       <input type="number" name="platodocecosto" required>
+                       
+                       
+                       <!-- tresce -->
+                       <label for="platotrece" >postre 4:</label>
+                       <input type="text" name="platotrece" required>
+                       <!-- trececosto -->
+                       <label for="platotrececosto">costo 4:</label>
+                       <input type="number" name="platotrececosto" required>
+
+
+                       <!-- catorce -->
+                       <label for="platocatorce" >postre 5:</label>
+                       <input type="text" name="platocatorce" required>
+                       <!-- catorcecosto -->
+                       <label for="platocatorcecosto" >costo 5:</label>
+                       <input type="number" name="platocatorcecosto" required>
+                    </div>
+
+                   <div class="btn-subir">
+                    <input type="submit" class="btn-save" value="Subir">
+                </div>
+                </form>
+                
+            </div>
+        </main>
+    </div>
+
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <% if(typeof alert != "undefined") { %>
+        <script>
+            Swal.fire({
+                title: '<%= alertTitle%>',
+                text: '<%= alertMessage%>',
+                icon: '<%= alertIcon%>',
+                showConfirmButton: <%= showConfirmButton%>,
+                timer: <%= timer%>
+            })
+        </script>
+    <% } %>
+</body>
+</html>

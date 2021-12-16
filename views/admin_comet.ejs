@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/estilos_admin_coment.css">
+    <link rel="stylesheet" href="resources/fonts/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <input type="checkbox" id="nav-toggle">
+    <div class="barra_nav">
+        <div class="logo">
+            <h2><a href=""><span class="icon-location-food"></span><span> <a href="/login">MIKUNA Admin</a></span></a></h2>
+        </div>
+        <div class="barra_menu">
+            <ul>
+                <li>
+                    <a href="/AdminCarta" ><span class="icon-clipboard"></span><span>Carta</span></a>
+                </li>
+                <li>
+                    <a href="/AdminReserva" ><span class="icon-text-document"></span><span>Reservas</span></a>
+                </li>
+                <li>
+                    <a href="/AdminComent" class="carta"><span class="icon-conversation"></span><span>Comentarios</span></a>
+                </li>
+                <li>
+                    <a href="index" class="inicio" ><span class="icon-home"></span><span>Vista-cliente</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="contenido_header">
+        <header>
+            <h1 class="menu">
+                <label for="nav-toggle" >
+                    <span class="icon-menu"></span>
+                </label>
+                <div class="title">
+                    <h1><span class="uno">Welcome</span><span class="dos"> to the reservation of  "MIKUNA"</span></h1>
+                </div>
+                <div>
+                    <h2>MIKUNA Admin</h2>
+                </div>
+                
+            </h1> 
+        </header>
+        <main>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Id</td>
+                        <td>Nombre</td>
+                        <td>Comentario</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% if (comentario) { %>
+                        <% for (var i = 0; i < comentario.length; i++) { %>
+                            <tr>
+                                <td><%= (i + 1) %></td>
+                                <td><%= comentario[i].nombre %></td>
+                                <td><%= comentario[i].comentario %></td>
+                            </tr>
+                      <%  } %>
+                    <%  } %>
+                </tbody>
+            </table>
+        </main>
+    </div>
+  
+</body>
+</html>

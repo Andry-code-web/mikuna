@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/estilo_admin.css">
+    <link rel="stylesheet" href="resources/fonts/style.css">
+    <title>Administrador</title>
+</head>
+<body>
+    <input type="checkbox" id="nav-toggle">
+    <div class="barra_nav">
+        <div class="logo">
+            <h2><a href=""><span class="icon-location-food"></span><span> MIKUNA Admin</span></a></h2>
+        </div>
+        <div class="barra_menu">
+            <ul>
+                <li>
+                    <a href="/AdminCarta"><span class="icon-clipboard"></span><span>Carta</span></a>
+                </li>
+                <li>
+                    <a href="/AdminReserva"><span class="icon-text-document"></span><span>Reservas</span></a>
+                </li>
+                <li>
+                    <a href="/AdminComent"><span class="icon-conversation"></span><span>Comentarios</span></a>
+                </li>
+                <li>
+                    <a href="index" class="inicio" ><span class="icon-home"></span><span>Vista-cliente</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="contenido_header">
+        <header>
+            <h1 class="menu">
+                <label for="nav-toggle" >
+                    <span class="icon-menu"></span>
+                </label>
+                MIKUNA Admin
+            </h1> 
+
+            
+            <div class="nav_user">
+                <img src="resources/imagenes/user.jpg" width="40px" height="40px">
+                <div>
+                    <h4><%= name %></h4>
+                    <small><%= rol %></small>
+                </div>
+            </div>
+        </header>
+
+        <main id="primero">
+            <div class="title">
+                <h1>welcome <%= name %> to the administration of "MIKUNA"</h1>
+            </div>
+            <div class="cards">
+                <div class="conter_card carta">
+                    <div>
+                        <h1><a href="/AdminCarta">Carta</a></h1>
+                    </div>
+                    <div>
+                        <span class="icon-users"></span>
+                    </div>
+                </div>
+
+                <div class="conter_card reserva">
+                    <div>
+                        <h1><a href="/AdminReserva">Reserva</a></h1>
+                    </div>
+                    <div>
+                        <span class="icon-clipboard"></span>
+                    </div>
+                </div>
+
+                <div class="conter_card comentarios">
+                    <div>
+                        <h1><a href="/AdminComent">Comentarios</a></h1>
+                    </div>
+                    <div>
+                        <span class="icon-travel-car"></span>
+                    </div>
+                </div>
+
+                <div class="conter_card vista">
+                    <div>
+                        <h1><a href="index">Vista-cliente</a></h1>
+                    </div>
+                    <div>
+                        <span class="icon-wallet"></span>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+  
+    </div>
+</body>
+</html>

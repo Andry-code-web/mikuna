@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root{
+    --gold1:#F39C12;
+    --gold2:#F39C12 ;
+    --gray:#00000080;
+    --gray2:#f7d9d990;
+    --black1: #1A1B1F;
+    --black2: #30353B;
+    --shadow: 0 8px 8px;
+    --color_shadow: #00000033;
+}
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding:100px 0;
+    height: auto;
+}
+
+.container--modifier{
+    width: 60%;
+}
+
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.hero img{
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+}
+
+.nav__hero{
+    color: #fff;
+    height: 80px;
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255, 0.1);
+    background-color: #30353b93 ;
+    z-index: 1;
+}
+
+.nav__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: inherit;
+    padding: 0;
+}
+
+.logo__name{
+    font-size: 24px;
+}
+
+.link{
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 10px;
+}
+
+.link--active{
+    color: var(--gold1);
+    font-weight: 700;
+}
+
+.point{
+    color: var(--gold1);
+}
+
+.hero__main{
+    height: calc(100vh - 70px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0;
+}
+
+.mockup{
+    object-fit: cover;
+    width: 48%;
+    max-height: 90vh;
+}
+
+.hero__textos{
+    width: 48%;
+}
+
+.title{
+    font-size: 60px;
+    font-weight: 300;
+    color: #1A1B1F;
+}
+
+.title--active{
+    color: var(--gold1);
+    font-weight: 700;
+}
+
+.copy{
+    font-size: 24px;
+    color: var(--gray);
+    text-shadow: var(--shadow)  var(--color_shadow);
+    margin: 15px 0;
+}
+
+.copy__active{
+    font-weight: 700;
+}
+
+.cta{
+    padding: 20px 30px;
+    display: inline-block;
+    background: linear-gradient(180deg, #F39C12 0%, #F39C12 100%);
+    text-decoration: none;
+    color: var(--black2);
+    font-weight: 700;
+    box-shadow: var(--shadow) var(--color_shadow);
+    border-radius: 6px;
+}
+
+/* Listas de Menu/*/
+
+.services{
+    margin-top: 5rem;
+}
+
+.services .container{
+    padding: 5rem;
+}
+
+.services p{
+    font-size: 30px;
+    margin-bottom: 1rem;
+}
+.services h1{
+    font-size: 30px;
+}
+.services h2{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 3rem;
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+figure img{
+    width: 100%;
+    border-radius: 20px;
+}
+.card div h1{
+    margin-bottom: 2rem;
+    font-size: 40px;
+}
+
+/* entrada */
+
+.card .entrada{
+    display: grid;
+    grid-template-columns: 40% auto;
+    text-align: end;
+    height: 70%;
+}
+
+.card .entrada h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+.card .entrada p{
+    font-size: 20px;
+}
+
+
+/* fondo */
+.card .fondo{
+    display: grid;
+    grid-template-columns: 40% auto;
+    text-align: end;
+    height: 70%;
+}
+
+.card .fondo h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+.card .fondo p{
+    font-size: 20px;
+}
+
+/* sopas */
+.card .sopa{
+    display: grid;
+    grid-template-columns: 40% auto;
+    text-align: end;
+    height: 70%;
+}
+
+.card .sopa h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+.card .sopa p{
+    font-size: 20px;
+}
+
+/* postre */
+
+.card .postres{
+    display: grid;
+    grid-template-columns: 40% auto;
+    text-align: end;
+    height: 70%;
+}
+
+.card .postres h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+.card .postres p{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:500px){
+    .mockup{
+        width: 80%;
+        margin-bottom: 15px;
+    }
+
+    .services .card{
+        width: 95%;
+    }
+
+    .card{
+        width: 95%;
+    }
+
+    .background{
+        width: 95%;
+    }
+
+    .container--modifier{
+        width: 90%;
+    }
+
+    .newsletter{
+        width: 100%;
+        display: none;
+    }
+
+    .newsletter--modifier{
+        display: block;
+    }
+
+    .check__item{
+        width: 100%;
+        border: none;
+        padding: none;
+        justify-content: center;
+    }
+}
+

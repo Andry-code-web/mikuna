@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/estilos_comentario.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="hero">
+        <nav class="nav__hero">
+            <div class="container nav__container">
+                <div class="logo">
+                    <h2 class="logo__name">Mikuna<span class="point">.</span></h2>
+                </div>
+                <div class="links">
+                    <a href="/index" class="link ">Inicio</a>
+                    <a href="/carta" class="link ">Menú</a>
+                    <a href="/reserva" class="link ">Reserva</a>
+                    <a href="/comentario" class="link link--active">Contacto</a>
+                </div>
+            </div>
+            <img src="resources/imagenes/fondocalle.jpg" alt="">
+        </nav>
+
+        <section class="container hero__main">
+            <div class="cta">
+                <h2 class="title">Dirección:</p></h2>   
+                <h3 class="subtitle">Calle Melgar 1005 - Cercado</h3>
+                <h2 class="title">Número Telefonico:</p></h2>   
+                <h3 class="subtitle">+054 24 36 72</h3>
+                <h2 class="title">WhatsApp:</p></h2>   
+                <h3 class="subtitle">934 845 964</h3>
+                <h2 class="title">Facebook:</p></h2>   
+                <h3 class="subtitle">Mikuna.aqp </h3>
+                <a href="https://goo.gl/maps/ksHbE2jCnoQuhEbA8" class="cta2">¿Como llegar?</a>
+            </div>
+
+            <div class="comentario-form">
+                <h1>Form Comentario</h1>
+                <form action="/comentario" method="POST">
+                
+                    <label for="nombre" >Nombre completo</label>
+                    <input type="text" name="nombre" class="controls" required>
+                
+                    <label for="comentario" >Comentario</label>
+                    <input type="texta" name="comentario" class="controls comentario" required>
+                
+                    <div style="display: inline;">
+                       <input type="submit" class="btn-save" value="Save">
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <% if(typeof alert != "undefined") { %>
+        <script>
+            Swal.fire({
+                title: '<%= alertTitle%>',
+                text: '<%= alertMessage%>',
+                icon: '<%= alertIcon%>',
+                showConfirmButton: <%= showConfirmButton%>,
+                timer: <%= timer%>
+            })
+        </script>
+    <% } %>
+
+</body>
+</html>

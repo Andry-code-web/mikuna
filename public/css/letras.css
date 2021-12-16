@@ -1,0 +1,12 @@
+@font-face {
+    font-family: primera letra;
+    src: url(letras/Alfa_Slab_One/AlfaSlabOne-Regular.ttf);
+}
+@font-face {
+    font-family: segunda letra;
+    src: url(letras/Bungee/Bungee-Regular.ttf);
+}
+@font-face {
+    font-family: tersera letra;
+    src: url(letras/Chewy/Chewy-Regular.ttf);
+}

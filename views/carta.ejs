@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/estilos_menu.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="hero">
+        <nav class="nav__hero">
+            <div class="container nav__container">
+                <div class="logo">
+                    <h2 class="logo__name">Mikuna<span class="point">.</span></h2>
+                </div>
+                <div class="links">
+                    <a href="/index" class="link ">Inicio</a>
+                    <a href="/carta" class="link link--active">Menú</a>
+                    <a href="/reserva" class="link">Reserva</a>
+                    <a href="/comentario" class="link">Contacto</a>
+                </div>
+            </div>
+        </nav>
+
+        <section class="container hero__main">  
+            <div class="hero__textos">
+                <h1 class="title">Nuestro Menú de <span class="title--active">Comida Peruana y Regional</span></h1> 
+                <a href="/reserva" class="cta">Reserva Ahora</a>
+            </div>
+        </section>
+        <img src="resources/imagenes/Plaza.jpg" alt="">
+    </header>
+
+    <section class="services">
+        <div class="container">
+            <p class="copy__section">Distintos platos variados de nuestra grastronomia peruana y regional.</p>
+            <h1>Menu MIKUNA</h1>
+            <% if (platos) { %>
+                <% for (var i = 0; i < platos.length; i++) { %> 
+                    <h2><%= platos[i].dia %></h2>
+                    <div class="card">
+                        
+                        
+                        <figure>
+                            <img src="resources/imagenes/pentagono4.jpg" alt="">
+                        </figure>
+                        
+                        <div class="entrada">
+                            <h1>Platos entrada</h1>
+
+                            <br>
+                            <p><%= platos[i].platouno %></p>
+                            <p>-------------------------------------------S/<%= platos[i].platounocosto %></p>
+
+                            <p><%= platos[i].platodos %></p>
+                            <p>-------------------------------------------S/<%= platos[i].platodoscosto %></p>
+                        </div>
+
+                        
+                        <div class="fondo">
+                            <h1>Platos fondo</h1>
+                            <br>
+                            <p><%= platos[i].platotres %></p>
+                            <p>-------------------------------------------S/<%= platos[i].platotrescosto %></p>
+                            <p><%= platos[i].platocuatro %></p>
+                            <p>-------------------------------------------S/<%= platos[i].platocuatrocosto %></p>
+                            <p><%= platos[i].platocinco %></p>
+                            <p>-------------------------------------------S/<%= platos[i].platocincocosto %></p>
+                            <p><%= platos[i].platoseis %></p>
+                            <p>-------------------------------------------S/<%= platos[i].platoseiscosto %></p>
+                        </div>
+                        
+                        <figure>
+                            <img src="resources/imagenes/pentagono9.jpg" alt="">
+                        </figure>
+                        
+
+                         
+                        <figure>
+                            <img src="resources/imagenes/Chupe.jpg" alt="">
+                        </figure>
+                        <div class="sopa">
+                            <h1>Sopas</h1>
+                            <br>
+                            
+                            <p><%= platos[i].platosiete %></p>
+                            <p>-------------------------------------------S/<%= platos[i].platosietecosto %></p>
+                            <p><%= platos[i].platoocho %></p>
+                            <p>-------------------------------------------S/<%= platos[i].platoochocosto %></p>
+                            <p><%= platos[i].platonueve %></p>
+                            <p>-------------------------------------------S/<%= platos[i].platonuevecosto %></p>
+                        </div>
+
+
+                        <div class="postres">
+                            <h1>Postres/Bebida</h1>
+                            <br>
+                            <p><%= platos[i].platodies %></p>
+                            <p>-------------------------------------------S/<%= platos[i].platodiescosto %>
+                            <p><%= platos[i].platoonce %></p>
+                            <p>-------------------------------------------S/<%= platos[i].platooncecosto %></p>
+                            <p><%= platos[i].platodoce %></p>
+                            <p>-------------------------------------------S/<%= platos[i].platodocecosto %></p>
+                            <p><%= platos[i].platotrece %></p>
+                            <p>-------------------------------------------S/<%= platos[i].platotrececosto %></p>
+                            <p><%= platos[i].platocatorce %></p>
+                            <p>-------------------------------------------S/<%= platos[i].platocatorcecosto %></p>
+                        </div>
+
+                        <figure>
+                            <img src="resources/imagenes/pentagono19.jpg    " alt="">
+                        </figure>
+
+                        
+                     </div>
+                <%  } %>
+            <%  } %>
+        </div>
+    </section>
+
+
+
+
+
+   
+</body>
+</html>

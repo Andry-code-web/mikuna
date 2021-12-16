@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="register-form">
+        <h1>Form Registration</h1>
+        <form action="/register" method="POST">
+            <label for="user" >User</label>
+            <input type="text" name="user" required>
+
+            <label for="name" >Full name</label>
+            <input type="text" name="name" required>
+
+            <label for="rol">Rol</label>
+            <select name="rol" id="rol" class="select-css">
+                <option value="admin" selected>Admin</option>
+                <option value="data entry">Data enty</option>
+            </select>
+
+            <label for="pass" >Password</label>
+            <input type="password" name="pass" required>
+
+            <div style="display: inline;">
+                <a href="/login" class="btn-cancel">Cancelar</a><input type="submit" class="btn-save" value="Save">
+            </div>
+        </form>
+    </div>
+
+
+    <!-- 
+        USAMOS SWEETALERT2 PARA UNOS MENSAJES MAS VISTOSOS
+     -->
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <% if(typeof alert != "undefined") { %><!-- comprobamos la coneccion --> 
+        <script>
+            //escribimos los parametros de app.ejs con EJS
+            Swal.fire({
+                title: '<%= alertTitle%>',
+                text: '<%= alertMessage%>',
+                icon: '<%= alertIcon%>',
+                showConfirmButton: <%= showConfirmButton%>,
+                timer: <%= timer%>
+            }).then(() => {
+                window.location = '<%= ruta %>'
+            })
+        </script>
+    <% } %>
+</body>
+</html>
